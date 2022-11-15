@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 13</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container{
+            width: 70%;
+            margin: 100px auto;
+            background-color: #f6f6f6;
+            padding: 2rem;
+
+        }
+        
+        .section-title{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+       
+        .row .content-txt{
+            width: 80%;
+        }
+        
+        .col{
+            display: flex;
+        }
+        .row{
+            display: flex;
+        }
+        .row .img{
+            width: 100px;
+        }
+        
+        p{
+            margin-top: 0.5rem;
+        }
+        .section-content>div {
+            margin-top: 2.5rem;
+            
+        }
+      
+        .content-txt{
+            margin-top: 5px;
+            font-family: sans-serif;
+            font-size: 12px;
+            font-style: italic;
+            color: #8c8c8c;
+        }
+        .content-txt p {
+            color: #616161;
+            font-weight: 100;
+        }
+       img{
+        width: 70%;
+       }
+       .col .row:nth-child(n+1){
+        margin-left: 1rem;
+       }
+       .border{
+        width: 50px;
+        border: 1px solid #6188fd;
+        background-color: #6188fd;
+       }
+       .section-title .border{
+            text-align: center;
+            margin: 5px auto;
+       }
+       .title-txt{
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+        @media only screen and (max-width:780px){
+            .col{
+                display: block;
+                width: 100%;
+            }
+            .row{
+                
+                width: 100%;
+                margin-top: 2rem;
+            }
+            .row .content-txt{
+                width: 100%;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section-title">
+            <div class="title-txt">
+                What our clients say
+            </div>
+            <div class="border">
+
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="col">
+                <div class="row">
+                    <div class="img"><img src="./image/img13.png" alt=""></div>
+                    <div class="content-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img"><img src="./image/img13.png" alt=""></div>
+                    <div class="content-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img"><img src="./image/img13.png" alt=""></div>
+                    <div class="content-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        <p>John Doe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="img"><img src="./image/img13.png" alt=""></div>
+                    <div class="content-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img"><img src="./image/img13.png" alt=""></div>
+                    <div class="content-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img"><img src="./image/img13.png" alt=""></div>
+                    <div class="content-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        <p>John Doe</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

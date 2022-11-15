@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 11</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .section{
+            width: 50%;
+            margin: 100px auto;
+
+        }
+        .txt-form{
+            color: #484848;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: bold;
+        }
+        .section >div{
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+        .form>div{
+            margin-top: 10px;
+        }
+        .inp-mail{
+            width: 575px;
+        }
+        .col-1 input{
+            width: 277px;
+        }
+        #mail{
+            
+            margin-left: 13px;
+            
+        }
+        .col-3 textarea{
+            width: 577px;
+            height: 190px;
+            resize: none;
+            border: 0.1px solid #e3e3e3;
+        }
+        .col-4{
+            display: flex;
+            justify-content: space-between;
+        }
+        .col-4 p{
+            margin-right: 1.6rem;
+            color: #9c9c9c;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        input{
+            height: 30px;
+            border: 0.1px solid #e3e3e3;
+        }
+        button{
+            width: 93px;
+            height: 29px;
+            background-color: #7dcefd;
+            border: 1px #3195cf;
+            border-radius: 5px;
+            font-size: 10px;
+            color: #e9f7ff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ::placeholder{
+            color: #b3b3b3;
+            font-size: 11px;
+            padding-left: 1rem;
+        }
+        /* .section >div{
+            
+            margin: 0 auto;
+        } */
+        @media only screen and (max-width:768px) {
+        .section{
+            width: 80%;
+            
+        }
+        .col-1 input{
+            width: 100%;
+            display: block;
+        }
+        .col-2 input{
+            width: 100%;
+        }
+        .col-3 textarea{
+            width: 100%;
+           
+        }
+        #mail{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        .col-4{
+            flex-wrap: wrap-reverse;
+        }
+        .col-4 p {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    /* @media only screen and (max-width:1978px) and (min-width:1277px) {
+        .col-4 p{
+            margin-right: 23.5rem;
+           
+        }
+    } */
+
+
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="txt-form">
+            Get in touch with us by filling contact form below
+        </div>
+        <div class="form">
+            <div class="col-1">
+                <input type="text" name="fullName" id="fullName" placeholder="*Enter your full name">
+                <input type="email" name="mail" id="mail" placeholder="*Enter your email address" >
+            </div>
+            <div class="col-2">
+                <input type="text" name="subject" id="subject" placeholder="*Enter your subject" class="inp-mail">
+            </div>
+            <div class="col-3">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="*Your message here..."></textarea>
+            </div>
+            <div class="col-4">
+                <button type="button">Send message</button>
+                <p>*Please fill all required form field, thanks!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

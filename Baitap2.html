@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .section{
+            width: 80%;
+            margin: 100px auto;
+            text-align: center;
+            /* margin-top: 100px; */
+            position: relative;
+        
+        }
+        
+        img{
+            width: 100%;
+            height: 300px;
+            
+        }
+        .content{
+            position: absolute;
+            width:100%;
+            height: 300px;
+            background-color:rgba(0,0,0,0.7);
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+        
+        p{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        .title{
+            font-size: 20px;
+            
+        }
+        .content-bg{
+            font-family: thin;
+            font-size: 14px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        button{
+            width: 260px;
+            height: 35px;
+            font-family: Thin;
+            font-size: 15px;
+            background-color: #e3533d;
+            border-radius: 4px;
+            color: white;
+            border: 0 solid;
+            cursor: pointer;
+        }
+        .content .ct{
+            margin-top: 4.5rem;
+        }
+        
+        
+@media only screen and (max-width: 780px) {
+    .section{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        
+    }
+    .ct{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    button{
+        width: 50%;
+        height: 100%;
+        padding: 5px;
+        opacity: initial !important;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <div class="section">
+        <img class="banner" src="image/banner.png" alt="">
+        <div class="content">
+           <div class="ct">
+                <p class=" title">Don't miss this special offer!</p>
+                <p class="content-bg">
+                    Get it now for just $10! the price in be increased affter 50 downloads
+                </p>
+                <button type="button">Get the latest version of Bootslander</button>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

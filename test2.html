@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2</title>
+    <link rel="stylesheet" href="../test.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="./test.js"></script>
+</head>
+<body>
+    <div class="border" id="reform">
+        <form action=""name="dangnhap"  class="form">
+            <div class="icon_close" onclick="reload()">
+                <i class=" material-icons" id="icon_close_change" >close</i>
+               </div>
+            <h2>Change Password</h2>
+                <div class="txt_form">
+                    <div><i class="material-icons">lock</i></div>
+                    <input type="password" name="oldpass" id="oldpass" value="" placeholder="Nhập mật khẩu cũ"><br>
+                    <span id="erroldpass"class="err"></span>
+                </div>
+                <div class="txt_form">
+                    <div><i class="material-icons">lock</i></div>
+                    <input type="password" name="pass" id="newpass" value="" placeholder="Mật khẩu mới"><br>
+                    <span id="errnewpass"class="err"></span>
+                </div>
+                <div class="txt_form">
+                    <div><i class="material-icons">lock</i></div>
+                    <input type="password" name="pass" id="renewpass" value="" placeholder="Nhập lại mật khẩu mới"><br>
+                    <span id="errrenewpass"class="err"></span>
+                </div>
+                
+                <button type="button" class="btn_login" id="btn_save" onclick="checkChangePass()">Save</button><br>
+                <span id="errtb2" class="err"></span>
+                <div class="txt_forget" id="btn_back" style="cursor: pointer;">
+                    <a>Back</a>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

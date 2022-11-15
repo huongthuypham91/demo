@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+    <link rel="stylesheet" href="../test.css">
+    <script src="../test.js" ></script>
+</head>
+<body>
+    <div class="border" id="form">
+        <form  class="form" >
+         
+               <div class="icon_close" onclick="load()">
+                <i class=" material-icons" id="icon_close" >close</i>
+               </div>
+                <h3>Member Login</h3>
+                <div class="txt_form">
+                    <div><i class="material-icons">person</i></div>
+                    <input type="text" name="user" id="user" value="" placeholder="Username"><br>
+                    <span id="errUser" class="err"></span>
+                </div>
+                <div class="txt_form">
+                    <div><i class="material-icons">lock</i></div>
+                    <input type="password" name="pass" id="pass" value="" placeholder="Password"><br>
+                    <span id="errPass" class="err"></span>
+                   
+                </div>
+                
+                <button type="button" class="btn_login" id="btn_login" onclick="myFunction()">Login</button><br>
+                <span id="errtb1" class="err"></span>
+                
+                <div class="txt_forget" id="btn_forgot">
+                    <a  href="#" >Change password?</a>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

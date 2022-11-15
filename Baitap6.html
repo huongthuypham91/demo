@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 6</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        
+        .content{
+            width: 50%;
+            margin: 100px auto;
+            
+            
+        }
+        .content .content_col{
+            display: flex;
+            margin-top: 20px;
+        }
+       
+        .content_row{
+            background-color: #edecec;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            margin-left: 15px;
+            position: relative;
+        }
+        
+        
+        .txt{
+            position: absolute;
+            margin-top: 5rem;
+           text-align: center;
+        }
+        .txt>p{
+            margin-top: 0;
+            /*  */
+        }
+        .txt1{
+           
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: rgb(8, 8, 8);
+        }
+        .txt2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-small;
+            color: rgb(120, 119, 119);
+            margin-bottom: 1rem;
+
+        }
+        
+        .icons{
+            border: #339999 solid;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-top: 15px;
+           
+        }
+        i{
+            color: #339999;
+            margin: 25%;
+        }
+        @media only screen and (max-width:780px) {
+            .content{
+                width: 100%;
+                margin: 0 auto;
+            }
+            .content .content_col{
+                display: block;
+                margin-top: 10px;
+                
+            }
+            .content_row{
+                /* width: 100%; */
+                margin: 10px auto auto auto;
+                /* text-align: center; */
+            }
+           
+        }
+        @media only screen and (max-width:1024px) and (min-width:780px) {
+            .content{
+                margin:0 auto;
+                display: flex;
+            }
+            .content .content_col{
+                display: block;
+               
+            }
+            .content_row{
+                margin-top: 20px;
+            }
+            
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content_col">
+            <div class="content_row">
+                <div class="icons"><i class="material-icons">monitor</i></div>
+                <div class="txt">
+                    <p class="txt1">
+                        UI/UX Design
+                    </p>
+                    <p class="txt2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+            <div class="content_row">
+                <div class="icons"><i class="material-icons">monitor</i></div>
+                <div class="txt">
+                    <p class="txt1">
+                        Web Development
+                    </p>
+                    <p class="txt2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+            <div class="content_row">
+                <div class="icons"><i class="material-icons">business_center</i></div>
+                <div class="txt">
+                    <p class="txt1">
+                        Branding
+                    </p>
+                    <p class="txt2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content_col">
+            <div class="content_row">
+                <div class="icons"><i class="material-icons">photo_camera</i></div>
+                <div class="txt">
+                    <p class="txt1">
+                        Photography
+                    </p>
+                    <p class="txt2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+            <div class="content_row">
+                <div class="icons"><i class="material-icons">smart_toy</i></div>
+                <div class="txt">
+                    <p class="txt1">
+                        Apps Development
+                    </p>
+                    <p class="txt2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+            <div class="content_row">
+                <div class="icons"><i class="material-icons">timeline</i></div>
+                <div class="txt">
+                    <p class="txt1">
+                        Digital Marketing
+                    </p>
+                    <p class="txt2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

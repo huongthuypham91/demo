@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VD1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .ptA1{
+            width: 1000px;
+            height: 1500px;
+            border: 10px solid brown;
+            position: relative;
+          
+        }
+        .ptA2{
+            width:380px;
+            height: 70px;
+            border: 10px solid rgb(159, 215, 73);
+            position: fixed;
+            top: 0;
+            
+            
+        }
+        .ptA3{
+            width:380px;
+            height: 70px;
+            border: 10px solid rgb(159, 215, 73);
+            position: fixed;
+            bottom: 0px;
+        }
+        .ptA4{
+            width: 700px;
+            height: 560px;
+            border: 10px solid blueviolet;
+            top: 72px;
+            z-index: -1;
+            position: relative;
+            
+        }
+        .ptA5{
+            width: 280px;
+            height: 150px;
+            border: 10px solid burlywood;
+            margin-left: 200px;
+            position: -webkit-sticky;
+            top: calc(50% - 100px); 
+            position:  sticky ;
+            /* bottom: 0; */
+        }
+        .ptA6{
+            width: 140px;
+            height: 50px;
+            border: 10px solid plum;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+        }
+        /* .ptA1,.ptA2,.ptA3,.ptA4.ptA6{
+            transition: linear 0.1s;
+        } */
+        @media only screen and (max-width:780px){
+            .ptA1,.ptA2,.ptA3,.ptA4,.ptA5{
+                width: 50%;
+              
+            }
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="ptA1">
+        
+        <div class="ptA2">
+           
+
+        </div>
+        <div class="ptA3">
+
+        </div>
+        <div class="ptA4">
+            <div class="ptA5"></div>
+            <div class="ptA6"></div>
+        </div>
+       
+    </div>
+</body>
+</html>
