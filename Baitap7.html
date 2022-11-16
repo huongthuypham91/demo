@@ -11,128 +11,104 @@
             padding: 0;
         }
         .contain{
-            width: 50%; 
-            margin: 20px auto;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            
         }
         .section{
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            
             
         }
-      
         hr{
             width: 100%;
-            size: 1px;
-            text-align: center;
-            margin: 0 auto;
+            border: solid 0.3px;
+            border-color: rgb(226, 226, 226);
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
-       
-       
-        .btn{
-            height: 30px;
-            border-radius: 20px;
-            border: 0 solid;
-            text-align: center;
-            font-size: 10px;
-            cursor: pointer;
-            color: white;
-            text-transform: uppercase;
-            font-family: sans-serif;
-            margin-top: 2rem;
-            
-            
+        img{
+            width: 250px;
         }
-        .btn_blue{
-            width: 55%;
-            background-color: #75bee1;
+        .ss2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .btn_green{
-            width: 40%;
-            background-color: #95d075;
+        .ss1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-      
+        .ss1 .img{
+            display: flex;
+            justify-content: flex-end;
+
+        }
         h3{
             color: #a3a3a3;
             font-size: 25px;
-            font-family:sans-serif monospace;
+            font-family:Arial, Helvetica, sans-serif;
         }
         p{
             color: #c5c5c5;
             margin-top: 0.5rem;
             line-height: 22px;
-            font-size: 16px;
+            font-size: 13px;
             font-family: Arial, Helvetica, sans-serif;
         }
-
-        img{
-            width: 90%;
+        .btn_blue{
+            width: 230px;
+            background-color: #75bee1;
         }
-       
-        hr{
-            margin-top: 3rem;
-            margin-bottom: 3rem;
+        .btn_green{
+            width: 170px;
+            background-color: #95d075;
         }
-        
-        .ct-1{
-            width: 100%;
-        }
-        
-        .ct-2{
-            width: 100%;
-            margin-left: 3rem;
+        .btn{
+            height: 30px;
+            border-radius: 20px;
+            border: 0 solid;
+            text-align: center;
+            font-size: 9px;
+            cursor: pointer;
+            color: white;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
             margin-top: 2rem;
-        }
-        .img1{
-            width: 60%;
-            margin-left: 3rem;
-          
-           
+            
             
         }
-        .img2{
-            width: 90%;
+        .ct-1{
+          margin-right: 70px;
         }
-       b{
-        color: #8e8e8e;
-       }
-
-        @media only screen and (max-width: 1024px){
+        .ct-2{
+          margin-left: 70px;
+        }
+        @media only screen and (max-width: 540px){
+            .contain{
+                margin-top: 20px;
+            }
+            .section{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+            }
            
-            .ss2{
-                display: block;
-                text-align: center;
-            }
-            .ss1{
-                display: block;
-                text-align: center;
-            }
-            .btn{
-                width: 100%;
-                padding: 5px 5px;
-                padding-bottom: 2px;
-            }
-            .content{
-                width: 100%;
+            .ct-1{
+                margin-right:0;
+                margin-bottom: 20px;
             }
             .ct-2{
                 margin-left: 0;
+                margin-top: 20px;
             }
-            .img{
-                width: 100%;
-            }
-            .img1{
-                text-align: center;
-                margin-top: 1rem;
-                margin-left: 0;
-
-            }
-            .img2{
-                text-align: center;
-            }
-            .btn{
-                width: 50%;
-            }
-        }
+        } 
     </style>
 </head>
 <body>
@@ -146,13 +122,13 @@
                 <button class="btn btn_blue">Blue button with modal videos</button>
             </div>
            
-            <div class="img img1">
+            <div class="img">
                 <img src="image/img7-a.png" alt=" ">
             </div>
         </div>
         <hr  >
         <div class="section ss2">
-            <div class="img img2">
+            <div class="img ">
                 <img src="image/img7-b.png" alt=" " >
             </div>
            

@@ -14,10 +14,15 @@ document.getElementById("btn_show").onclick = function(){
 document.getElementById('btn_forgot').onclick= function(){
     document.getElementById("reform").style.display='block';
     document.getElementById('form').style.display='none';
+    reload();
 }
 document.getElementById('btn_back').onclick=function(){
     document.getElementById('form').style.display='block';
     document.getElementById('reform').style.display='none';
+    reload();
+    
+    
+
 
 }
 
@@ -58,10 +63,10 @@ function checkForm(){
         document.getElementById('user').value='';
         document.getElementById('pass').value='';
         document.getElementById("errtb1").innerHTML="";
+        reload();
     }else {
         document.getElementById("errtb1").innerHTML="Tài khoản hoặc mật khẩu không đúng";
-        // document.getElementById("errUser").innerHTML="Tài khoản không đúng";
-        // document.getElementById("errPass").innerHTML="Mật khẩu không đúng";
+        
     }
 }
 
@@ -114,16 +119,17 @@ function checkChangePass(){
     }else if(OldPass == MK && reNewPass == NewPass){
         alert("Đổi mật khẩu thành công");
         Pass = NewPass;
-        document.getElementById("form").style.display = 'block';
-        document.getElementById('btn_show').style.display = 'none';
+        document.getElementById('btn_show').style.display="none";
         document.getElementById("reform").style.display='none';
+        document.getElementById("form").style.display = 'block';
+        document.getElementById("oldPass").value="";
+        document.getElementById("newPass").value="";
+        document.getElementById("renewPass").value="";
         document.getElementById("erroldpass").innerHTML="";
         document.getElementById("errnewpass").innerHTML="";
         document.getElementById("errrenewpass").innerHTML="";
-        document.getElementById('oldPass').value='';
-        document.getElementById('newPass').value='';
-        document.getElementById('renewPass').value='';
         
+       
     }
     
     
@@ -134,9 +140,9 @@ function reload(){
             document.getElementById('pass').value='';
             document.getElementById('errUser').innerHTML='';
             document.getElementById('errPass').innerHTML='';
-            document.getElementById('oldPass').innerHTML='';
-            document.getElementById('newPass').innerHTML='';
-            document.getElementById('renewPass').innerHTML='';
+            document.getElementById("oldPass").value='';
+            document.getElementById("newPass").value='';
+            document.getElementById("renewPass").value='';
             document.getElementById('errnewpass').innerHTML='';
             document.getElementById('erroldpass').innerHTML='';
             document.getElementById('errrenewpass').innerHTML='';

@@ -11,13 +11,13 @@
             padding: 0;
         }
         .section{
-            width: 50%;
+            width: 60%;
             margin: 100px auto;
 
         }
         .txt-form{
             color: #484848;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:Arial, Helvetica, sans-serif;
             font-style: bold;
         }
         .section >div{
@@ -25,21 +25,25 @@
             margin-top: 0.5rem;
         }
         .form>div{
+            width: 100%;
             margin-top: 10px;
+            
         }
         .inp-mail{
-            width: 575px;
+            width: 100%;
         }
-        .col-1 input{
-            width: 277px;
+        .col-1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            
         }
         #mail{
-            
-            margin-left: 13px;
-            
+            margin-left: 10px;
         }
+        
         .col-3 textarea{
-            width: 577px;
+            width: 100%;
             height: 190px;
             resize: none;
             border: 0.1px solid #e3e3e3;
@@ -47,9 +51,9 @@
         .col-4{
             display: flex;
             justify-content: space-between;
+            
         }
         .col-4 p{
-            margin-right: 1.6rem;
             color: #9c9c9c;
             font-size: 13px;
             font-family: Arial, Helvetica, sans-serif;
@@ -68,24 +72,27 @@
             font-size: 10px;
             color: #e9f7ff;
             font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
         }
         ::placeholder{
             color: #b3b3b3;
             font-size: 11px;
             padding-left: 1rem;
         }
-        /* .section >div{
-            
-            margin: 0 auto;
-        } */
-        @media only screen and (max-width:768px) {
-        .section{
+       textarea::placeholder{
+        padding-top: 6px;
+       }
+        @media only screen and (max-width:780px) {
+        /* .section{
             width: 80%;
-            
+           
+        } */
+        .col-1{
+            width: 100%;
+            display: block;
         }
         .col-1 input{
             width: 100%;
-            display: block;
         }
         .col-2 input{
             width: 100%;
@@ -106,13 +113,7 @@
             margin-bottom: 10px;
         }
     }
-    /* @media only screen and (max-width:1978px) and (min-width:1277px) {
-        .col-4 p{
-            margin-right: 23.5rem;
-           
-        }
-    } */
-
+   
 
     </style>
 </head>

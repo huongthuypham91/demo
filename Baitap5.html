@@ -26,6 +26,7 @@
             font-size: 16px;
             margin-top: 1rem;
             margin-left: 3rem;
+            line-height: 1.4rem;
         }
 
         .section .list ul{
@@ -33,7 +34,8 @@
         }
         ul{
            
-            float: left;
+           display: grid;
+           grid-template-columns: 34% 33% 33%;
         }
         li{
             list-style: none;
@@ -45,15 +47,20 @@
         }
         i{
             color: #c2d82e;
+            margin-right: 10px;
         }
-        @media only screen and (max-width:1330px) and (min-width:638px) {
-           .list ul {
-            margin-block-start: 0;
-            margin-block-end: 0;
-
+        @media only screen and (max-width:1024px) and (min-width:666px) {
+           ul{
+            display: grid;
+            grid-template-columns: 53% 47%;
+           }
         }
-        
-    }
+        @media only screen and (max-width:665px) {
+           ul{
+                display: block;
+            
+           }
+        }
     </style>
 </head>
 <body>
@@ -72,15 +79,11 @@
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
-            </ul>
-            <ul>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
-            </ul>
-            <ul>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
                 <li><i class="fas fa-check"></i>Custom ShortCodes</li>
