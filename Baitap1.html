@@ -10,8 +10,15 @@
             margin: 0;
             padding: 0;
         }
-        .section{
+        /* .body{
+            width: 70%;
+            margin: 0 auto;
+            background-color: #8598cc;
             
+        } */
+        .section{
+            width: 100%;
+            height: 400px;
             line-height: 35px;
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
@@ -91,9 +98,25 @@
             margin-left: 0;
           }
         }
+        @media only screen and (min-width:780px) and (max-width:1440px){
+          .section{
+            width: 100%;
+            margin: 100px auto;
+            text-align: center;
+            
+          }
+          .button{
+            display: block;
+            width: 100%;
+          }
+          .bt2{
+            margin-left: 0;
+          }
+        }
     </style>
 </head>
 <body>
+    <div class="body">
     <div class="section">
         <div class="bt1"><p>190 x 50</p></div>
         <div class="txt">
@@ -109,5 +132,6 @@
             <button class="bt2">All Features</button>
         </div>
     </div>
+</div>
 </body>
 </html>

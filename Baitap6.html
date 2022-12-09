@@ -10,8 +10,8 @@
     <style>
         
         .content{
-            width: 50%;
-            margin: 100px auto;
+            width: 90%;
+            margin: 0 auto;
             
             
         }
@@ -22,18 +22,22 @@
        
         .content_row{
             background-color: #edecec;
-            width: 200px;
-            height: 150px;
+            width: 100%;
+            height: 160px;
             display: flex;
             margin-left: 15px;
-            position: relative;
+            flex-direction: column;
+            align-items: center;
         }
         
         
         .txt{
-            position: absolute;
-            margin-top: 5rem;
-           text-align: center;
+           
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         .txt>p{
             margin-top: 0;
@@ -42,12 +46,12 @@
         .txt1{
            
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
+            font-size: 17px;
             color: rgb(8, 8, 8);
         }
         .txt2{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: x-small;
+            font-size: 14px;
             color: rgb(120, 119, 119);
             margin-bottom: 1rem;
 
@@ -66,7 +70,7 @@
             color: #339999;
             margin: 25%;
         }
-        @media only screen and (max-width:780px) {
+        @media only screen and (max-width:425px) {
             .content{
                 width: 100%;
                 margin: 0 auto;
@@ -83,7 +87,7 @@
             }
            
         }
-        @media only screen and (max-width:1024px) and (min-width:780px) {
+        @media only screen and (max-width:680px) and (min-width:425px) {
             .content{
                 margin:0 auto;
                 display: flex;
@@ -94,8 +98,11 @@
             }
             .content_row{
                 margin-top: 20px;
+                margin-left: 10px;
             }
-            
+            .content_col{
+                margin-left: 10px;
+            }
            
         }
         

@@ -34,10 +34,7 @@
         .row{
             display: flex;
         }
-        .row .img{
-            width: 100px;
-        }
-        
+      
         p{
             margin-top: 0.5rem;
         }
@@ -60,7 +57,8 @@
             font-style: normal;
         }
        img{
-        width: 70%;
+        width: 75%;
+        object-fit: contain;
        }
        .col .row:nth-child(n+1){
         margin-left: 1rem;
@@ -94,6 +92,9 @@
                 width: 100%;
                 
             }
+            .col .row:nth-child(n+1){
+                margin-left: 0;
+       }
         }
     </style>
 </head>
@@ -159,3 +160,4 @@
     </div>
 </body>
 </html>
+<!-- ảnh bị tràn dùng => object fit -->
