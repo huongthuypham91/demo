@@ -17,6 +17,7 @@
             
         }
         .section{
+            width: 90%;
             margin-top: 2rem;
             display: flex;
             justify-content: space-between;
@@ -29,6 +30,7 @@
         .col{
             display: flex;
             color: #a8a8a8;
+            align-items: center;
         }
         div input{
             width: 100%;
@@ -145,7 +147,7 @@
                         <input type="text" name="subject" id="subject" placeholder="Subject">
                     </div>
                     <div class="col-4">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" style="resize: none;"></textarea>
                     </div>
                     <div class="col-5">
                         <button type="button">Send Message</button>

@@ -20,14 +20,17 @@
     .section div:last-child{
         border-bottom: none;
     }
-    .content div{
+    .content >div{
         
-        margin: 0.5rem 0.5rem 1rem 0;
+        margin: 0 0 0.6rem 0;
         
     }
     .nd-ct{
         margin-top: 0.3rem;
         margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         
     }
     .nd-ct .ndung{
@@ -59,8 +62,16 @@
         }
         .content{
             width: 100%;
+            /* flex-direction: column; */
+            align-items: center;
         }
+        .nd-ct div{
+            margin-left: 0.5rem;
+        }
+        .content> div{
+            margin: 0 0 0.6rem 0;
         
+        }
     }
    </style>
 </head>

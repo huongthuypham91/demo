@@ -11,7 +11,7 @@
             padding: 0;
         }
         .section{
-            width: 60%;
+            width: 70%;
             margin: 100px auto;
 
         }
@@ -20,28 +20,28 @@
             font-family:Arial, Helvetica, sans-serif;
             font-style: bold;
         }
-        .section >div{
-            margin-left: 2rem;
-            margin-top: 0.5rem;
-        }
-        .form>div{
-            width: 100%;
-            margin-top: 10px;
+        .form div{
+            width: 90%;
+            margin-top: 1rem;
             
         }
-        .inp-mail{
+        /* .form div input{
             width: 100%;
-        }
-        .col-1{
+        
+        } */
+        .form div textarea{
             width: 100%;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            
-        }
-        #mail{
-            margin-left: 10px;
         }
         
+        .col-1{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 17px;
+        }
+       
+        .col-2 input{
+            width: 100%;
+        }
         .col-3 textarea{
             width: 100%;
             height: 190px;
@@ -52,6 +52,7 @@
             
         }
         .col-4{
+            
             display: flex;
             justify-content: space-between;
             
@@ -86,13 +87,16 @@
       
         @media only screen and (max-width:780px) {
         
-        .col-1{
+        .col-1 {
             width: 100%;
-            display: block;
+            display:flex;
+            flex-direction: column;
+            gap: 0;
         }
         .col-1 input{
             width: 100%;
         }
+        
         .col-2 input{
             width: 100%;
         }
@@ -101,8 +105,8 @@
            
         }
         #mail{
-            margin-left: 0;
-            margin-top: 10px;
+            
+            margin-top: 15px;
         }
         .col-4{
             flex-wrap: wrap-reverse;
@@ -123,8 +127,13 @@
         </div>
         <div class="form">
             <div class="col-1">
+               
                 <input type="text" name="fullName" id="fullName" placeholder="*Enter your full name">
+               
+               
                 <input type="email" name="mail" id="mail" placeholder="*Enter your email address" >
+               
+               
             </div>
             <div class="col-2">
                 <input type="text" name="subject" id="subject" placeholder="*Enter your subject" class="inp-mail">

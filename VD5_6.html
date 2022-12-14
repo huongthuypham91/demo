@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/VD5_6.css">
 </head>
 <body>
-   <div class="btn_dangnhap" id="btn_show">
-        <button type="button" id="btn_DN">
+   <div class="btn_dangnhap" id="btn_show" onclick="reload()" >
+        <button type="button" id="btn_DN" onclick="reload()">
             Đăng nhập hệ thống
         </button>
    </div>
@@ -18,17 +18,17 @@
     <form  class="form" >
      
            <div class="icon_close">
-            <i class=" material-icons" id="icon_close">close</i>
+            <i class=" material-icons" id="icon_close" onclick="reload()">close</i>
            </div>
             <h3>Member Login</h3>
             <div class="txt_form">
                 <div><i class="material-icons">person</i></div>
-                <input type="text" name="user" id="user"  placeholder="Username"><br>
+                <input type="text" name="user" id="user"  placeholder="Username" onkeydown="load()"><br>
                 <span id="errUser" class="err"></span>
             </div>
             <div class="txt_form">
                 <div><i class="material-icons">lock</i></div>
-                <input type="password" name="pass" id="pass" placeholder="Password"><br>
+                <input type="password" name="pass" id="pass" placeholder="Password"onkeydown="load()"><br>
                 <span id="errPass" class="err"></span>
                
             </div>
@@ -36,7 +36,7 @@
             <button type="button" class="btn_login" id="btn_login" onclick="myFunction()">Login</button><br>
             <span id="errtb1" class="err"></span>
             
-            <div class="txt_forget" id="btn_forgot">
+            <div class="txt_forget" id="btn_forgot" onclick="reload()">
                 <a  href="#" >Change password?</a>
             </div>
     </form>
@@ -44,28 +44,28 @@
 <div class="border" style="display:none;" id="reform">
     <form action=""name="dangnhap"  class="form">
         <div class="icon_close">
-            <i class=" material-icons" id="icon_close_change">close</i>
+            <i class=" material-icons" id="icon_close_change" onclick="reload()" >close</i>
            </div>
         <h2>Change Password</h2>
             <div class="txt_form">
                 <div><i class="material-icons">lock</i></div>
-                <input type="password" name="oldpass" id="oldpass"  placeholder="Nhập mật khẩu cũ"><br>
+                <input type="password" name="oldpass" id="oldpass"  placeholder="Nhập mật khẩu cũ" onkeydown="load()"><br>
                 <span id="erroldpass"class="err"></span>
             </div>
             <div class="txt_form">
                 <div><i class="material-icons">lock</i></div>
-                <input type="password" name="pass" id="newpass"  placeholder="Mật khẩu mới"><br>
+                <input type="password" name="pass" id="newpass"  placeholder="Mật khẩu mới"onkeydown="load()"><br>
                 <span id="errnewpass"class="err"></span>
             </div>
             <div class="txt_form">
                 <div><i class="material-icons">lock</i></div>
-                <input type="password" name="pass" id="renewpass"  placeholder="Nhập lại mật khẩu mới"><br>
+                <input type="password" name="pass" id="renewpass"  placeholder="Nhập lại mật khẩu mới" onkeydown="load()"><br>
                 <span id="errrenewpass"class="err"></span>
             </div>
             
             <button type="button" class="btn_login" id="btn_save" onclick="checkChangePass()">Save</button><br>
             <span id="errtb2" class="err"></span>
-            <div class="txt_forget" id="btn_back" style="cursor: pointer;">
+            <div class="txt_forget" id="btn_back" style="cursor: pointer;" onclick="reload()">
                 <a>Back</a>
             </div>
     </form>

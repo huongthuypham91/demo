@@ -28,16 +28,20 @@ function myFunction(){
         document.getElementById("errtb1").innerHTML="Tài khoản hoặc mật khẩu không đúng";
         document.getElementById("errUser").innerHTML="";
         document.getElementById("errPass").innerHTML="";
+        
     }
 }
 function load(){
     document.getElementById("errUser").innerHTML="";
     document.getElementById("errPass").innerHTML="";
     document.getElementById("errtb1").innerHTML="";
-    document.getElementById("pass").value = "";
-    document.getElementById("user").value="";
+    // document.getElementById("pass").value = "";
+    // document.getElementById("user").value="";
 }
-
+document.getElementById("pass").onkeydown= function(){
+    // load();
+    console.log("huong");
+}
 //==================================================================================
 // ===================================================================================
  function checkChangePass(){
@@ -88,6 +92,7 @@ function load(){
         document.getElementById("erroldpass").innerHTML="";
         document.getElementById("errnewpass").innerHTML="";
         document.getElementById("errrenewpass").innerHTML="";
+        
     }
  }
 function reload(){
