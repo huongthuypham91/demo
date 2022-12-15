@@ -30,7 +30,7 @@
         margin-left: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         
     }
     .nd-ct .ndung{
@@ -57,13 +57,12 @@
     }
     @media only screen and (max-width:750px) {
         .section{
-            width: 80%;
+            width: 90%;
             
         }
         .content{
             width: 100%;
-            /* flex-direction: column; */
-            align-items: center;
+           align-items: center;
         }
         .nd-ct div{
             margin-left: 0.5rem;
@@ -72,6 +71,18 @@
             margin: 0 0 0.6rem 0;
         
         }
+    }
+    @media only screen
+        and (min-device-width: 768px)
+        and (max-device-width: 1024px)
+         {
+            .section{
+                width: 90%;
+                margin: 100px auto;
+                background-color: #f2f3f5;
+                padding: 0;
+            }
+ 
     }
    </style>
 </head>

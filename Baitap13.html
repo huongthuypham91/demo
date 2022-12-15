@@ -29,7 +29,9 @@
         }
         
         .col{
-            display: flex;
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
         }
         .row{
             display: flex;
@@ -81,9 +83,7 @@
        .img{
         display: flex;
         align-items: center;
-        /* justify-content: flex-start; */
         flex-direction: column;
-        /* flex-wrap: nowrap;*/
        }
         @media only screen and (max-width:780px){
             .col{
@@ -104,28 +104,22 @@
        }
         }
         @media only screen and (max-width:1024px) and (min-width:781px){
-            .section-content> div{
-                display: flex;
+            .section-content{
+                display: grid;
+                grid-template-columns: 50% 50%;
             }
-            /* .col{
-                display: flex;
-            } */
-            /* .col{
+            .col{
                 display: block;
-                width: 100%;
             }
             .row{
-                
-                width: 100%;
-                margin-top: 2rem;
-            }
-            .row .content-txt{
-                width: 100%;
-                
+                margin-top: 25px;
             }
             .col .row:nth-child(n+1){
                 margin-left: 0;
-       } */
+            }
+            .section-content>div {
+                margin-top: 0;
+            }
         }
 
     </style>
@@ -145,21 +139,21 @@
                 <div class="row">
                     <div class="img"><img src="./image/img13.png" alt=""></div>
                     <div class="content-txt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
                         <p>John Doe</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="img"><img src="./image/img13.png" alt=""></div>
                     <div class="content-txt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
-                        <p>John Doe</p>
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."                        
+                        <p>Johnathan Doe</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="img"><img src="./image/img13.png" alt=""></div>
                     <div class="content-txt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
                         <p>John Doe</p>
                     </div>
                 </div>
@@ -168,22 +162,22 @@
                 <div class="row">
                     <div class="img"><img src="./image/img13.png" alt=""></div>
                     <div class="content-txt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+                        <p>Johnathan Doe</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img"><img src="./image/img13.png" alt=""></div>
+                    <div class="content-txt">
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
                         <p>John Doe</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="img"><img src="./image/img13.png" alt=""></div>
                     <div class="content-txt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
-                        <p>John Doe</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="img"><img src="./image/img13.png" alt=""></div>
-                    <div class="content-txt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolorem cum aspernatur quas vitae, iste, blanditiis corrupti tempora laborum voluptate consequatur doloribus ullam optio fugit quia! Sunt voluptatibus vel quos!
-                        <p>John Doe</p>
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."                        
+                        <p>Johnathan Doe</p>
                     </div>
                 </div>
             </div>
