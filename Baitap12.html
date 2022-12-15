@@ -10,21 +10,26 @@
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         .container{
-            width: 70%;
+            width: 60%;
             margin: 100px auto;
             
         }
+      
+        input{
+            box-sizing: border-box;
+        }
         .section{
-            width: 90%;
+            width: 100%;
             margin-top: 2rem;
             display: flex;
             justify-content: space-between;
 
         }
         .inp-contact{
-           width: 90%;
+           width: 100%;
            margin-left: 3rem;
         }
         .col{
@@ -44,6 +49,7 @@
             border: 0.1px solid #e3e3e3;
             padding-left: 8px;
             padding-top: 5px;
+            box-sizing: border-box;
         }
         .border-txt{
             width: 30px;
@@ -56,8 +62,8 @@
            
         }
         button{
-            width: 100px;
-            height: 30px;
+            
+            padding: 10px;
             font-size: 11px;
             background-color: #0cb8b6;
             border: 0 solid;
@@ -98,7 +104,7 @@
        
         @media only screen and (max-width:650px) {
             .container{
-                width: 80%;
+                width: 90%;
                 margin: 1rem auto;
             }
             .section{

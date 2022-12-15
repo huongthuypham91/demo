@@ -8,27 +8,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        
+        *{
+           box-sizing: border-box;
+        }
         .content{
-           display: flex;
-           flex-direction: column;
-           align-items: center;
+           width: 90%;
+           margin: 0 auto;
+           display: grid;
+           gap: 4%;
         }
     
         .content_col{
-            
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            gap: 2%;
            
         }
         .content_row{
-            background-color: #edecec;
+            background-color: #ededed;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px;
-            margin-top: 15px;
-            margin-left: 15px;
+            
         }
         .txt{
             display: flex;
@@ -55,6 +57,7 @@
            font-family: Arial, Helvetica, sans-serif;
            font-size: 17px;
            color: rgb(8, 8, 8);
+           font-weight: 550;
        }
        .txt2{
             font-family: Arial, Helvetica, sans-serif;
@@ -62,6 +65,9 @@
             color: rgb(120, 119, 119);
             
 
+        }
+        i{
+            color: #339999;
         }
         @media only screen and (max-width:425px) {
             .content{
@@ -79,7 +85,7 @@
             }
            
         }
-        @media only screen and (max-width:680px) and (min-width:425px) {
+        @media only screen and (max-width:580px) and (min-width:425px) {
             .content{
                 margin:0 auto;
                 display: flex;
@@ -96,6 +102,16 @@
                 margin-left: 10px;
             }
         }
+        @media only screen and (max-width:980px) and (min-width:581px) {
+           .content {
+            display: grid;
+            grid-template-columns: 48% 48%;
+            gap: 2%;
+           }
+           .content >div{
+            display: block;
+           }
+        }
       
         
     </style>
@@ -110,7 +126,7 @@
                         UI/UX Design
                     </p>
                     <p class="txt2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consect adipis elit minim venlam ettis inkeras.
                     </p>
                 </div>
             </div>
@@ -121,7 +137,7 @@
                         Web Development
                     </p>
                     <p class="txt2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consect adipis elit minim venlam ettis inkeras.
                     </p>
                 </div>
             </div>
@@ -132,7 +148,7 @@
                         Branding
                     </p>
                     <p class="txt2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consect adipis elit minim venlam ettis inkeras.
                     </p>
                 </div>
             </div>
@@ -145,7 +161,7 @@
                         Photography
                     </p>
                     <p class="txt2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consect adipis elit minim venlam ettis inkeras.
                     </p>
                 </div>
             </div>
@@ -156,7 +172,7 @@
                         Apps Development
                     </p>
                     <p class="txt2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consect adipis elit minim venlam ettis inkeras.
                     </p>
                 </div>
             </div>
@@ -167,7 +183,7 @@
                         Digital Marketing
                     </p>
                     <p class="txt2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consect adipis elit minim venlam ettis inkeras.
                     </p>
                 </div>
             </div>

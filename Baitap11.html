@@ -9,41 +9,49 @@
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         .section{
-            width: 70%;
+            width: 60%;
             margin: 100px auto;
 
         }
         .txt-form{
-            color: #484848;
+            color: #262525;
             font-family:Arial, Helvetica, sans-serif;
             font-style: bold;
+            font-size: 18px;
         }
         .form div{
-            width: 90%;
+           
             margin-top: 1rem;
             
         }
-        /* .form div input{
-            width: 100%;
-        
-        } */
+       
         .form div textarea{
             width: 100%;
+            box-sizing: border-box;
         }
-        
+        input{
+            box-sizing: border-box;
+        }
+        .col-1 input{
+            
+            box-sizing: border-box;
+        }
         .col-1{
+            width: 100%;
+            
             display: grid;
-            grid-template-columns: 50% 50%;
-            gap: 17px;
+            grid-template-columns: 48% 48%;
+            gap: 4%;
         }
        
         .col-2 input{
             width: 100%;
         }
         .col-3 textarea{
-            width: 100%;
+            
             height: 190px;
             resize: none;
             border: 0.1px solid #e3e3e3;
@@ -69,12 +77,13 @@
             padding-left: 16px;
         }
         button{
-            width: 93px;
-            height: 29px;
+            /* width: 100px;
+            height: 35px; */
+            padding: 8px;
             background-color: #7dcefd;
             border: 1px #3195cf;
             border-radius: 5px;
-            font-size: 10px;
+            font-size: 14px;
             color: #e9f7ff;
             font-family: Arial, Helvetica, sans-serif;
             cursor: pointer;
@@ -86,7 +95,9 @@
         }
       
         @media only screen and (max-width:780px) {
-        
+        .section{
+            width: 90%;
+        }
         .col-1 {
             width: 100%;
             display:flex;
@@ -116,7 +127,7 @@
             margin-bottom: 10px;
         }
     }
-   /* Sửa padding input */
+  
 
     </style>
 </head>
